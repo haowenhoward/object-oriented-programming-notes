@@ -17,7 +17,7 @@ Definition of a **class**: An abstract description of all objects that can be ma
 
 To define a class, use the **class** keyword
 Code inside classes should be indented
-To initialize Attributes, use the ```__init__```
+To initialize Attributes, use the ```__init__``` thing
 
 
 
