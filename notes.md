@@ -22,15 +22,29 @@ To initialize Attributes, use the ```__init__()``` method
 example:
 ```python:
 #height and weight are fields, move() and eat() are methods
-class human:
+class Human:
 	def __init__(self, height, weight):
-    	self.height = height
-    	self.weight = weight
+    		self.height = height
+    		self.weight = weight
   	def move():
 		pass
 	def eat():
 		pass
 ```
+
+To hide information or restrict access to certain attributes or methods, is called encapsulation, 
+and can be done by adding double underscore prefix ```__``` before a attribute or method
+
+example:
+```python:
+class Example:
+	def __init__(example):
+		self.__example = example
+	def get_example():
+		return self.__example
+```
+
+here the ```example``` attribute is being encapsulated, and cannot be directly accessed by the user, though is still accessable using the ```get_example()``` method.
 
 
 
