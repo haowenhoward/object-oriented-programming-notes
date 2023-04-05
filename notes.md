@@ -15,9 +15,23 @@ or an instance of a class. It is a combination of data(fields) and functional co
 
 Definition of a **class**: An abstract description of all objects that can be made from this set class where an object can be instantiated from. Classes have attributes which devide into Fields and Methods
 
-To define a class, use the **class** keyword
+To define a class, use the ```class``` keyword
 Code inside classes should be indented
-To initialize Attributes, use the ```__init__``` thing
+To initialize Attributes, use the ```__init__()``` method
+
+example:
+```python:
+#height and weight are fields, move() and eat() are methods
+class human:
+	def __init__(self, height, weight):
+    	self.height = height
+    	self.weight = weight
+  	def move():
+		pass
+	def eat():
+		pass
+```
+
 
 
 
