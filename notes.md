@@ -65,7 +65,20 @@ class Tomato:
 	def self.speak(): #3
 		print("I am a Tomato")
 ```
+2 important base methods one can override are ```__str__``` and ```__repr__```
+They both change the string representation of an object
+if only ```__repr__``` is overriden it will be used for str(), print() and repr()
+if only ```__str__``` is overriden it will be used for str(), print() and repr()
+if both were overriden, str() and print() will use ```__str__``` and repr() will use ```__repr__```
+it is good practice to define both as ```__str__``` represents a readable version while ```__repr__``` represents a unambiguous version
 
+example:
+```python:
+class Pineapple:
+	def __str__(self):
+		return("pineapple")
+	def __repr__(self):
+		return("apple
 
 
 
