@@ -32,7 +32,7 @@ class Human:
 		pass
 ```
 
-To hide information or restrict access to certain attributes or methods, is called encapsulation, 
+To hide information or restrict access to certain attributes or methods, is called **encapsulation**, 
 and can be done by adding double underscore prefix ```__``` before a attribute or method
 
 example:
@@ -45,6 +45,15 @@ class Example:
 ```
 
 here the ```example``` attribute is being encapsulated, and cannot be directly accessed by the user, though is still accessable using the ```get_example()``` method.
+
+To create two methods of the same name but different parameters in the same class is called **overloading**.
+To create two methods of the same name but one in the parent class and one in the child class is called **overriding**.
+To create multiple methods of the same name in different classes that don't have inheritance, is called **polymorphism**.
+Note that there is not overloading in python 3.
+Overriding and polymorphism are both achieved by defining functions of the same name.
+
+example:
+
 
 
 
