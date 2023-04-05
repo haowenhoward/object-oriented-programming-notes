@@ -23,12 +23,12 @@ example:
 ```python:
 #height and weight are fields, move() and eat() are methods
 class Human:
-	def __init__(self, height, weight):
+	def self.__init__(self, height, weight):
     		self.height = height
     		self.weight = weight
-  	def move():
+  	def self.move(self):
 		pass
-	def eat():
+	def self.eat(self):
 		pass
 ```
 
@@ -38,9 +38,9 @@ and can be done by adding double underscore prefix ```__``` before a attribute o
 example:
 ```python:
 class Example:
-	def __init__(example):
+	def self.__init__(self, example):
 		self.__example = example
-	def get_example():
+	def self.get_example(self):
 		return self.__example
 ```
 
@@ -53,7 +53,18 @@ Note that there is not overloading in python 3.
 Overriding and polymorphism are both achieved by defining functions of the same name.
 
 example:
-
+```python:
+# 1 and 2 is overriding, 2 and 3 is polymorphism
+class Fruit:
+	def self.speak(): #1
+		print("I am a fruit")
+class Orange(Fruit):
+	def self.speak(): #2
+		print("I am a Orange")
+class Tomato:
+	def self.speak(): #3
+		print("I am a Tomato")
+```
 
 
 
