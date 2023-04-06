@@ -91,6 +91,21 @@ There are 3 main ways of inheritance,
 **Multiple Inheritance**: A subclass inheriting the features of a multiple parent classes.
 **Multilevel Inheritance**: A subclass is inheriting from another subclass… A → B → C.
 
+example (single inheritance):
+```python:
+class Fruit:
+	def __init__(self, size, color):
+		self.size = size
+		self.color = color
+
+#the Apple class inherit from onlu the Fruit class
+class Apple(Fruit):
+	def __init__(self, size, taste):
+		super().__init__(size, "red") #the super() method accesses the main parent class, don't need to write self when using super()
+			self.taste = taste
+```
+
+
 
 
 
