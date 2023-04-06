@@ -98,18 +98,11 @@ class Fruit:
 		self.size = size
 		self.color = color
 
-#the Apple class inherit from onlu the Fruit class
+#the Apple class inherit from only the Fruit class
 class Apple(Fruit):
 	def __init__(self, size, taste):
 		super().__init__(size, "red") #the super() method accesses the main parent class, don't need to write self when using super()
 			self.taste = taste
 ```
 
-
-
-
-
-
-
-
-
+Note: Custom classes can also be programmed to be iterable, indexable and slicable, but Mr. Park says we will learn that in university.
