@@ -23,12 +23,12 @@ example:
 ```python:
 #height and weight are fields, move() and eat() are methods
 class Human:
-	def self.__init__(self, height, weight):
+	def __init__(self, height, weight):
     		self.height = height
     		self.weight = weight
-  	def self.move(self):
+  	def move(self):
 		pass
-	def self.eat(self):
+	def eat(self):
 		pass
 ```
 
@@ -38,9 +38,9 @@ and can be done by adding double underscore prefix ```__``` before a attribute o
 example:
 ```python:
 class Example:
-	def self.__init__(self, example):
+	def __init__(self, example):
 		self.__example = example
-	def self.get_example(self):
+	def get_example(self):
 		return self.__example
 ```
 
@@ -48,21 +48,21 @@ here the ```example``` attribute is being encapsulated, and cannot be directly a
 
 To create two methods of the same name but different parameters in the same class is called **overloading**.
 To create two methods of the same name but one in the parent class and one in the child class is called **overriding**.
-To create multiple methods of the same name in different classes that don't have inheritance, is called **polymorphism**.
+To create multiple methods of the same name in different classes, is called **polymorphism**.
 Note that there is not overloading in python 3.
 Overriding and polymorphism are both achieved by defining functions of the same name.
 
 example:
 ```python:
-# 1 and 2 is overriding, 2 and 3 is polymorphism
+# 1 and 2 is overriding (also polymorphism), 2 and 3 is only polymorphism not overriding.
 class Fruit:
-	def self.speak(): #1
+	def speak(self): #1
 		print("I am a fruit")
 class Orange(Fruit):
-	def self.speak(): #2
+	def speak(self): #2
 		print("I am a Orange")
 class Tomato:
-	def self.speak(): #3
+	def speak(self): #3
 		print("I am a Tomato")
 ```
 2 important base methods one can override are ```__str__``` and ```__repr__```
@@ -78,7 +78,23 @@ class Pineapple:
 	def __str__(self):
 		return("pineapple")
 	def __repr__(self):
-		return("apple
+		return("apple")
+a = Pineapple()
+print(a) #outputs pineapple
+print(str(a)) #outputs pineapple
+print(repr(a)) #outputs apple
+```
+
+**Inheritance**: When an object or class is based on another class; where its features are from a parent class.
+There are 3 main ways of inheritance, 
+**Single Inheritance**: A subclass inheriting the features of a single superclass / parent class.
+**Multiple Inheritance**: A subclass inheriting the features of a multiple parent classes.
+**Multilevel Inheritance**: A subclass is inheriting from another subclass… A → B → C.
+
+
+
+
+
 
 
 
